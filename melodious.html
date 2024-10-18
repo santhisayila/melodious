@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melodious</title>
+    <link rel="stylesheet" href="C:\Users\rajus\Downloads\WAD\melodious.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="https://assets.onecompiler.app/42mnh46kc/42tpt7y24/loggoo.jpg" alt="Melodious Logo">
+        </div>
+        
+        <div id="musicPlayer" class="player"></div>
+        <img src="https://i.scdn.co/image/ab67616d0000b2736d97b3dc154dfdbe2321fb5c" alt="Album Cover" id="albumCover" class="player-album-cover">
+        <div class="player-info">
+            <p id="songTitle">Chuttamalle</p>
+            
+        </div>
+        <div class="player-artist">
+            <p id="songArtist">Anirudh Ravichander</p> 
+        </div>
+
+        <div class="player-controls">
+            <button id="prevButton"><i class="fas fa-backward"></i></button>
+            <button id="playPauseButton"><i class="fas fa-play"></i></button>
+            <button id="nextButton"><i class="fas fa-forward"></i></button>
+        </div>
+
+    </div>
+
+
+    <div class="main-content">
+        <header class="header">
+            <div class="search-bar-container">
+                <input type="text" class="search-bar" placeholder="  What do you want to listen?">
+                <i class="fas fa-search search-icon"></i> <!-- Added Magnifying Glass Icon -->
+            </div>
+            <div class="profile">
+                <a href="login.html">
+                    <span>S</span>
+                </a>
+            </div>
+        </header>
+
+        
+        
+        <section class="discover-section">
+            <h2>Songs you may like</h2>
+            <div class="music-grid">
+                <!-- Music Cards -->
+                <div class="music-card" data-audio-src="https://pagallworlds.com/wp-content/uploads/2024/08/Chuttamalle.mp3" data-title="Chuttamalle" data-artist="Shilpa Rao, Anirudh Ravichander" data-cover="https://i.scdn.co/image/ab67616d0000b2736d97b3dc154dfdbe2321fb5c" role="button" aria-label="Play Chuttamalle">
+                    <img src="https://i.scdn.co/image/ab67616d0000b2736d97b3dc154dfdbe2321fb5c" alt="Chuttamalle">
+                    <p>Chuttamalle</p>
+                </div>
+                <div class="music-card" data-audio-src="https://pagallworld.co.in/wp-content/uploads/2024/01/X2Download.app-Mawaa-Enthaina-Lyrical-Song-_Guntur-Kaaram-_-Mahesh-Babu-_Meenakshi-Chaudhary-_-Trivikram-_-Thaman-S-128-kbps.mp3" data-title="Mawa Enthina" data-artist="Unknown Artist" data-cover="https://i.scdn.co/image/ab67616d0000b273e828d0a7cbecd7ac239c066b" role="button" aria-label="Play Mawa Enthina">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/ea/b7/e8/eab7e82c-bad1-a9d6-4041-1c7b876282d4/cover.jpg/1200x1200bf-60.jpg" alt="Mawa Enthina">
+                    <p>Mawa Enthina</p>
+                </div>
+                <div class="music-card" data-audio-src="https://dl1.jattpendu.com/download/128k-wsucs/Nijame-Ne-Chebutunna.mp3" data-title="Nijame Ne Chebutunna" data-artist="Sid Sriram" data-cover="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/57/8d/64/578d6448-a22b-1f96-5a15-cbb66865af12/cover.jpg/1200x1200bb.jpg" role="button" aria-label="Play Nijame Ne Chebutunna">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/57/8d/64/578d6448-a22b-1f96-5a15-cbb66865af12/cover.jpg/1200x1200bb.jpg" alt="Nijame Ne Chebutunna">
+                    <p>Nijame Ne Chebutunna</p>
+                </div>
+                <div class="music-card" data-audio-src="https://hindi3.djpunjab.app/load/RLQnvIar2xgAE5tTKvFS8A==/Ammayi.mp3" data-title="Ammayi" data-artist="Pritam Chakraborty, Raghav Chaitanya" data-cover="https://i.scdn.co/image/ab67616d0000b273b270a0c7b06dc5a669ee03f1" role="button" aria-label="Play Ammayi">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273b270a0c7b06dc5a669ee03f1" alt="Ammayi">
+                    <p>Ammayi</p>
+                </div>
+                <div class="music-card" data-audio-src="https://pagallworlds.com/wp-content/uploads/2024/05/Fear-Song-Devara.mp3" role="button" aria-label="Play Fear Song from Devara Part 1">
+                    <img src="https://i.scdn.co/image/ab67616d0000b2738591a24a47e09545b988f9b2" alt="Fear Song">
+                    <p>Fear Song </p>
+                </div>
+                <div class="music-card" data-audio-src="https://koshalworld.com/files/download/id/42252" role="button" aria-label="Hungry Cheetah">
+                    <img src="https://c.saavncdn.com/989/Hungry-Cheetah-From-They-Call-Him-OG-Telugu-2023-20230903132606-500x500.jpg" alt="Hungry Cheetah">
+                    <p>Hungry Cheetah</p>
+                </div>
+                <div class="music-card" data-audio-src="https://koshalworld.com/files/download/id/43450" data-title="Daavudi" data-artist="Shilpa Rao, Anirudh Ravichander" data-cover="https://i.scdn.co/image/ab67616d0000b2736d97b3dc154dfdbe2321fb5c" role="button" aria-label="Daavudi">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273c55f82e66732fdf3f600dce7" alt="Daavudi">
+                    <p>Daavudi </p>
+              </div>
+              <div class="music-card" data-audio-src="https://pagalnew.com/128-download/45469" data-title="Telisiney Na Nuvvey" data-artist="Unknown Artist" data-cover="https://i.scdn.co/image/ab67616d0000b273e828d0a7cbecd7ac239c066b" role="button" aria-label="Telisiney Na Nuvvey">
+                    <img src="https://i1.sndcdn.com/artworks-000243615626-nmb2o3-t500x500.jpg" alt="Telisiney Na Nuvvey">
+                    <p>Telisiney Na Nuvvey</p>
+              </div>
+              <div class="music-card" data-audio-src="https://koshalworld.com/files/download/id/44733" role="button" aria-label="Ayudha Pooja">
+                    <img src="https://c.saavncdn.com/313/Devara-Part-1-Telugu-Telugu-2024-20240926171010-500x500.jpg" alt=" Ayudha Pooja">
+                    <p>Ayudha Pooja</p>
+              </div>
+              <div class="music-card" data-audio-src="https://dl1.jattpendu.com/download/128k-dmpxc/Yevvarra-Manaki-Custody-(From-Mahaan-(Telugu)).mp3" role="button" aria-label="Yevvarra Manaki Custody">
+                    <img src="https://c.saavncdn.com/670/Yevvarra-Manaki-Custody-From-Mahaan-Telugu--Telugu-2022-20220128180456-500x500.jpg" alt="Yevvarra Manaki Custody">
+                    <p>Yevvarra Manaki Custody</p>
+              </div>
+              <div class="music-card" data-audio-src="https://dl1.jattpendu.com/download/128k-dmixe/Malupu.mp3" role="button" aria-label="Malupu">
+                    <img src="https://c.saavncdn.com/045/Malupu-Telugu-2021-20210917105239-500x500.jpg" alt="Malupu">
+                    <p>Malupu</p>
+              </div>
+              <div class="music-card" data-audio-src="https://dl1.jattpendu.com/download/128k-gd/Po-Ve-Po---The-Pain-Of-Love.mp3" role="button" aria-label="Po Ve Po">
+            <img src="https://a10.gaanacdn.com/gn_img/albums/g4w3vwrWjJ/4w3vQePKjJ/size_m.webp" alt="Po Ve Po">
+        <p>Po Ve Po</p>
+    </div>
+                <!-- More music cards here -->
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="discover-section">
+            <div class="music-grid-footer">
+                <div class="music-card" data-audio-src="https://www.pagalworld.com.ht/files/download/id/6241" role="button" aria-label="Starboy">
+                    <img src="https://i.scdn.co/image/ab67616d0000b2734718e2b124f79258be7bc452" alt="Starboy">
+                    <p>Starboy</p>
+                </div>
+                <div class="music-card" data-audio-src="https://www.pagalworld.com.ht/files/download/id/16587" role="button" aria-label="Skyfall">
+        <img src="https://i.scdn.co/image/ab67616d00001e022737be35cc5245eef495be90" alt="Skyfall">
+        <p>Skyfall</p>
+    </div>
+  <div class="music-card" data-audio-src="https://www.pagalworld.com.ht/files/download/id/16290" role="button" aria-label="I Wanna Be Yours">
+        <img src="https://i.scdn.co/image/ab67616d00001e024ae1c4c5c45aabe565499163" alt="I Wanna Be Yours">
+        <p>I Wanna Be Yours </p>
+    </div>
+      <div class="music-card" data-audio-src="https://www.pagalworld.com.ht/files/download/id/6226" role="button" aria-label="Harleys in Hawaii">
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/04/Katy_Perry_-_Harleys_in_Hawaii.png" alt="Harleys in Hawaii">
+        <p>Harleys in Hawaii</p>
+    </div>
+    <div class="music-card" data-audio-src="https://www.pagalworld.com.ht/files/download/id/2296" role="button" aria-label="Heat Waves">
+        <img src="https://upload.wikimedia.org/wikipedia/en/b/b0/Glass_Animals_-_Heat_Waves.png" alt="Heat Waves">
+        <p>Heat Waves</p>
+    </div>
+     <div class="music-card" data-audio-src="https://mr-jat.in/dlod/6239?&volume=75&showstop=1&showvolume=1" role="button" aria-label="Perfect">
+        <img src="https://i.scdn.co/image/ab67616d0000b273ba5db46f4b838ef6027e6f96" alt="Perfect">
+        <p>Perfect</p>
+    </div>
+                <!-- More music cards here -->
+            </div>
+        </section>
+
+        
+</body>
+<footer>
+    <p style="text-align: center;">© 2024 Melodious. All rights reserved.</p>
+</footer>
+</html>
