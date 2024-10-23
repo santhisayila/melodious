@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Hits Hindi Playlist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .playlist-container {
+            width: 100%;
+            max-width: 900px;
+            background-color: #1d1b1e;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+
+        .playlist-container:hover {
+            transform: translateY(-5px);
+        }
+
+        .playlist-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .playlist-title h1 {
+            font-size: 2em;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .play-button {
+            font-size: 1.5em;
+            background-color: #ffffff;
+            border: none;
+            color: #1db954;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            color: white;
+        }
+
+        table thead th {
+            text-align: left;
+            padding: 15px 0;
+            font-weight: 500;
+            font-size: 1.2em;
+            border-bottom: 2px solid #444;
+            text-transform: uppercase;
+        }
+
+        table tbody tr {
+            transition: background-color 0.3s;
+        }
+
+        table tbody tr:hover {
+            background-color: #333;
+        }
+
+        table tbody tr:nth-child(even) {
+            background-color: #2a2a2a;
+        }
+
+        table th, table td {
+            padding: 12px 15px;
+        }
+
+        .song-title {
+            display: flex;
+            align-items: center;
+        }
+
+        .song-title img {
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .song-title img:hover {
+            transform: scale(1.05);
+        }
+
+        .song-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .song-artist {
+            color: #b3b3b3;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="playlist-container">
+        <div class="playlist-header">
+            <div class="playlist-title">
+                <h1>Hot Hits Hindi</h1>
+            </div>
+            <button class="play-button">▶</button>
+        </div>
+        <table class="playlist">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Album</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2735e16168f7e8ff4fb8aace6cf" alt="Aaj Ki Raat">
+                        <div class="song-details">
+                            <span>Aaj Ki Raat (From "Stree 2")</span>
+                            <span class="song-artist">Sachin-Jigar, Madhubanti Bagchi, Divya Kumar, Amitabh Bhattacharya</span>
+                        </div>
+                    </td>
+                    <td>Aaj Ki Raat (From "Stree 2")</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d0000b27344a38a16ca8778e748a4ac8b" alt="Mere Mehboob">
+                        <div class="song-details">
+                            <span>Mere Mehboob (From "Vicky Vidya Ka Woh Wala Video")</span>
+                            <span class="song-artist">Sachin-Jigar, Shilpa Rao, Sachet Tandon, Priya Saraiya</span>
+                        </div>
+                    </td>
+                    <td>Mere Mehboob (From "Vicky Vidya Ka Woh Wala Video")</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="song-title">
+                        <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8410b5b3dd6762f2aa92411968" alt="Tauba Tauba">
+                        <div class="song-details">
+                            <span>Tauba Tauba (From "Bad Newz")</span>
+                            <span class="song-artist">Karan Aujla</span>
+                        </div>
+                    </td>
+                    <td>Tauba Tauba (From "Bad Newz")</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273c617a7ebd0cfe5bdbb26d262" alt="Aayi Nai">
+                        <div class="song-details">
+                            <span>Aayi Nai</span>
+                            <span class="song-artist">Sachin-Jigar, Pawan Singh, Simran Choudhary, Divya Kumar, Amitabh Bhattacharya</span>
+                        </div>
+                    </td>
+                    <td>Stree 2</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273d5f4378b1ffc9119fdc7306d" alt="Sajni">
+                        <div class="song-details">
+                            <span>Sajni (From "Laapataa Ladies")</span>
+                            <span class="song-artist">Ram Sampath, Arijit Singh, Prashant Pandey</span>
+                        </div>
+                    </td>
+                    <td>Sajni (From "Laapataa Ladies")</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d0000b27328d1993af511ae93aa60b22a" alt="Haan Ke Haan">
+                        <div class="song-details">
+                            <span>Haan Ke Haan</span>
+                            <span class="song-artist">Sohail Sen, Monali Thakur, Kausar Munir</span>
+                        </div>
+                    </td>
+                    <td>Maharaj</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d0000b27372a77d038887cdc425f5ee55" alt="Jo Tum Mere Ho">
+                        <div class="song-details">
+                            <span>Jo Tum Mere Ho</span>
+                            <span class="song-artist">Anuv Jain</span>
+                        </div>
+                    </td>
+                    <td>Jo Tum Mere Ho</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d00001e020577a05a5d5cbb9dac8aeb7b" alt="Kinni Soni">
+                        <div class="song-details">
+                            <span>Kinni Soni</span>
+                            <span class="song-artist">Darshan Raval</span>
+                        </div>
+                    </td>
+                    <td>Kinni Soni</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2730c5cdaeb0f991a028acf371f" alt="Khoobsurat">
+                        <div class="song-details">
+                            <span>Khoobsurat (From "Stree 2")</span>
+                            <span class="song-artist">Sachin-Jigar, Vishal Mishra, Amitabh Bhattacharya</span>
+                        </div>
+                    </td>
+                    <td>Khoobsurat (From "Stree 2")</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d00001e025d039958f0d60d7fa98f393f" alt="Vekh Sohneya">
+                        <div class="song-details">
+                            <span>Vekh Sohneya - From "Call Me Bae"</span>
+                            <span class="song-artist">Bombay the Artist, Charan</span>
+                        </div>
+                    </td>
+                    <td>Call Me Bae (Original Series Soundtrack)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

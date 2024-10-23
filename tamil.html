@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trending Now Tamil Playlist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .playlist-container {
+            width: 100%;
+            max-width: 900px;
+            background-color: #1d1b1e;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+
+        .playlist-container:hover {
+            transform: translateY(-5px);
+        }
+
+        .playlist-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .playlist-title h1 {
+            font-size: 2em;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .play-button {
+            font-size: 1.5em;
+            background-color: #ffffff;
+            border: none;
+            color: #1db954;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            color: white;
+        }
+
+        table thead th {
+            text-align: left;
+            padding: 15px 0;
+            font-weight: 500;
+            font-size: 1.2em;
+            border-bottom: 2px solid #444;
+            text-transform: uppercase;
+        }
+
+        table tbody tr {
+            transition: background-color 0.3s;
+        }
+
+        table tbody tr:hover {
+            background-color: #333;
+        }
+
+        table tbody tr:nth-child(even) {
+            background-color: #2a2a2a;
+        }
+
+        table th, table td {
+            padding: 12px 15px;
+        }
+
+        .song-title {
+            display: flex;
+            align-items: center;
+        }
+
+        .song-title img {
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .song-title img:hover {
+            transform: scale(1.05);
+        }
+
+        .song-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .song-artist {
+            color: #b3b3b3;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="playlist-container">
+        <div class="playlist-header">
+            <div class="playlist-title">
+                <h1>Trending Now Tamil</h1>
+            </div>
+            <button class="play-button">▶</button>
+        </div>
+        <table class="playlist">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Album</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273da8d29ecfc096bb69dff7ac1" alt="Manasilaayo">
+                        <div class="song-details">
+                            <span>Manasilaayo (From "Vettaiyan")</span>
+                            <span class="song-artist">Anirudh Ravichander, Malaysia Vasudevan, Deepthi Suresh, Yugendran Vasudevan</span>
+                        </div>
+                    </td>
+                    <td>Manasilaayo (From "Vettaiyan")</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2734c6bb09f9a24c7a6b4ab83bc" alt="Matta">
+                        <div class="song-details">
+                            <span>Matta (From "The Greatest Of All Time")</span>
+                            <span class="song-artist">Yuvan Shankar Raja, Shenbagaraj, Velu, Sam, Narayanan Ravishankar</span>
+                        </div>
+                    </td>
+                    <td>Matta (From "The Greatest Of All Time")</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273d29a8598a39461ddb2a15953" alt="Hey Minnale">
+                        <div class="song-details">
+                            <span>Hey Minnale (From "Amaran") (Tamil)</span>
+                            <span class="song-artist">G. V. Prakash, Haricharan, Shweta Mohan, Karthik Netha</span>
+                        </div>
+                    </td>
+                    <td>Hey Minnale (From "Amaran")</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d0000b27374a555ea03b0844b1e1d4513" alt="Aasa Kooda">
+                        <div class="song-details">
+                            <span>Aasa Kooda - From "Think Indie"</span>
+                            <span class="song-artist">Sai Abhyankkar, Sai Smriti</span>
+                        </div>
+                    </td>
+                    <td>Aasa Kooda (From "Think Indie")</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2734c8ed16792cb66f09aa75b8c" alt="Water Packet">
+                        <div class="song-details">
+                            <span>Water Packet (From "Raayan")</span>
+                            <span class="song-artist">A. R. Rahman, Santhosh Narayanan, Shweta Mohan, Gana Kadhal</span>
+                        </div>
+                    </td>
+                    <td>Water Packet (From "Raayan")</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2732968adda11b6094cd5bea08b" alt="Hunter Vantaar">
+                        <div class="song-details">
+                            <span>Hunter Vantaar (From "Vettaiyan")</span>
+                            <span class="song-artist">Anirudh Ravichander, Siddharth Basrur, Arivu</span>
+                        </div>
+                    </td>
+                    <td>Hunter Vantaar (From "Vettaiyan")</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273aea36b00e97ebd3dbf8d90a5" alt="Dheema">
+                        <div class="song-details">
+                            <span>Dheema (From "Love Insurance Kompany")</span>
+                            <span class="song-artist">Anirudh Ravichander</span>
+                        </div>
+                    </td>
+                    <td>Dheema (From "Love Insurance Kompany")</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d00001e026c715ebe3e1b039ea96f66ba" alt="The Real Og">
+                        <div class="song-details">
+                            <span>The Real Og</span>
+                            <span class="song-artist">Yuvan Shankar Raja, Blaze, Premgi Amaren, Allen Preetham</span>
+                        </div>
+                    </td>
+                    <td>The Greatest Of All Time Ost</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d0000b27344781fed7555fc6764c3ee26" alt="Kuthu Vari">
+                        <div class="song-details">
+                            <span>Kuthu Vari (From "Think Indie")</span>
+                            <span class="song-artist">Raj Kiran, Vignesh Shivan</span>
+                        </div>
+                    </td>
+                    <td>Kuthu Vari</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273f3ca5d6b172002a2f4a6cb16" alt="Unnala Thaane">
+                        <div class="song-details">
+                            <span>Unnala Thaane</span>
+                            <span class="song-artist">K. S. Harisankar, Shashaa Tirupati</span>
+                        </div>
+                    </td>
+                    <td>Unnala Thaane</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

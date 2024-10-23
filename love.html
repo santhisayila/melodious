@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telugu Love Songs Playlist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .playlist-container {
+            width: 100%;
+            max-width: 900px;
+            background-color: #1d1b1e;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+
+        .playlist-container:hover {
+            transform: translateY(-5px);
+        }
+
+        .playlist-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .playlist-title h1 {
+            font-size: 2em;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .play-button {
+            font-size: 1.5em;
+            background-color: #ffffff;
+            border: none;
+            color: #1db954;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            color: white;
+        }
+
+        table thead th {
+            text-align: left;
+            padding: 15px 0;
+            font-weight: 500;
+            font-size: 1.2em;
+            border-bottom: 2px solid #444;
+            text-transform: uppercase;
+        }
+
+        table tbody tr {
+            transition: background-color 0.3s;
+        }
+
+        table tbody tr:hover {
+            background-color: #333;
+        }
+
+        table tbody tr:nth-child(even) {
+            background-color: #2a2a2a;
+        }
+
+        table th, table td {
+            padding: 12px 15px;
+        }
+
+        .song-title {
+            display: flex;
+            align-items: center;
+        }
+
+        .song-title img {
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .song-title img:hover {
+            transform: scale(1.05);
+        }
+
+        .song-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .song-artist {
+            color: #b3b3b3;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="playlist-container">
+        <div class="playlist-header">
+            <div class="playlist-title">
+                <h1>Telugu Love Songs</h1>
+            </div>
+            <button class="play-button">▶</button>
+        </div>
+        <table class="playlist">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Album</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td class="song-title">
+                        <img src="https://m.media-amazon.com/images/I/51WSQn7ukrL._UXNaN_FMjpg_QL85_.jpg" alt="Aradhya">
+                        <div class="song-details">
+                            <span>Aradhya (From "Kushi")</span>
+                            <span class="song-artist">Hesham Abdul Wahab, Chinmayi</span>
+                        </div>
+                    </td>
+                    <td>Aradhya (From "Kushi")</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="song-title">
+                        <img src="https://c.saavncdn.com/202/Ullaasam-From-Saripodhaa-Sanivaaram-Telugu-2024-20240713210333-500x500.jpg" alt="Ullaasam">
+                        <div class="song-details">
+                            <span>Ullaasam (From "Saripodhaa Sanivaaram")</span>
+                            <span class="song-artist">Jakes Bejoy, Sanjith Hegde</span>
+                        </div>
+                    </td>
+                    <td>Ullaasam (From "Saripodhaa Sanivaaram")</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="song-title">
+                        <img src="https://img.wynk.in/unsafe/200x200/filters:no_upscale():strip_exif():format(jpg)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/1638872316/srch_saregama_INH102105312.jpg" alt="Sirivennela">
+                        <div class="song-details">
+                            <span>Sirivennela (From "Shyam Singha Roy")</span>
+                            <span class="song-artist">Anurag Kulkarni, Mickey J. Meyer</span>
+                        </div>
+                    </td>
+                    <td>Sirivennela (From "Shyam Singha Roy")</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2739c3e5470ae7da921d7653981" alt="Neeli Neeli Aakasam">
+                        <div class="song-details">
+                            <span>Neeli Neeli Aakasam (From "30 Rojullo Preminchadam Ela")</span>
+                            <span class="song-artist">Sid Sriram, Sunitha Upadrasta</span>
+                        </div>
+                    </td>
+                    <td>Neeli Neeli Aakasam (From "30 Rojullo Preminchadam Ela")</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273ec8e1f5da18069b24fb43694" alt="Ramuloo Ramulaa">
+                        <div class="song-details">
+                            <span>Ramuloo Ramulaa (From "Ala Vaikunthapurramuloo")</span>
+                            <span class="song-artist">Anurag Kulkarni, Mangli</span>
+                        </div>
+                    </td>
+                    <td>Ramuloo Ramulaa (From "Ala Vaikunthapurramuloo")</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273d4ddea22f9f3cbf8520191c5" alt="Saami Saami">
+                        <div class="song-details">
+                            <span>Saami Saami (From "Pushpa")</span>
+                            <span class="song-artist">Mounika Yadav, Devi Sri Prasad</span>
+                        </div>
+                    </td>
+                    <td>Saami Saami (From "Pushpa")</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d0000b27306d5b855830140fe8a977f5d" alt="Chitti">
+                        <div class="song-details">
+                            <span>Chitti (From "Jathi Ratnalu")</span>
+                            <span class="song-artist">Radhan, Ram Miriyala</span>
+                        </div>
+                    </td>
+                    <td>Chitti (From "Jathi Ratnalu")</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2739b1c93361f991709758c28d2" alt="Inthandham">
+                        <div class="song-details">
+                            <span>Inthandham (From "Sita Ramam")</span>
+                            <span class="song-artist">Vishal Chandrashekhar, S.P.B. Charan</span>
+                        </div>
+                    </td>
+                    <td>Inthandham (From "Sita Ramam")</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273180104e7be9951df3303616f" alt="Mehabooba">
+                        <div class="song-details">
+                            <span>Mehabooba (From "KGF Chapter 2")</span>
+                            <span class="song-artist">Ravi Basrur, Ananya Bhat</span>
+                        </div>
+                    </td>
+                    <td>Mehabooba (From "KGF Chapter 2")</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2735d10ca5f50f7e9abca322956" alt="Oo Antava Oo Oo Antava">
+                        <div class="song-details">
+                            <span>Oo Antava Oo Oo Antava (From "Pushpa")</span>
+                            <span class="song-artist">Indravathi Chauhan, Devi Sri Prasad</span>
+                        </div>
+                    </td>
+                    <td>Oo Antava Oo Oo Antava (From "Pushpa")</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

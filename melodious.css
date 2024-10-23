@@ -37,75 +37,61 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    padding: 20px 40px;
+    background-color: #c9c9c9;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    margin-bottom: 30px;
 }
 
 .search-bar-container {
-    margin: 20px 250px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
     position: relative;
-    display: inline-block;
 }
 
 .search-bar {
-    padding-right: 30px; /* Add some space for the icon */
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    height: 35px;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
 }
 
-.search-icon {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 16px;
-    color: #252525;
+.search-bar:focus {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 
 .profile {
-    background-image: linear-gradient(135deg, #3a7bd5, #ff00cc); /* Modern gradient */
-    background-size: cover;
-    background-position: center;
-    color: #ffffff;
-    width: 60px; /* Slightly larger for a modern look */
-    height: 60px;
+    background-image: linear-gradient(135deg, #3a7bd5, #ff00cc);
+    color: #fff;
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px; /* Slightly larger text */
+    font-size: 22px;
     font-weight: bold;
-    border-radius: 50%; /* Circular shape */
-    margin: 10px 20px;
+    border-radius: 50%;
     cursor: pointer;
-    text-decoration: none;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add a light shadow for depth */
-    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effects */
-  }
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-left: 20px;
+}
 
-  .profile:hover {
-    transform: scale(1.1); /* Enlarge slightly on hover */
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Intensify shadow on hover */
-  }
+.profile:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
 
-  .profile a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: inherit; /* Keep text color same as profile color */
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-  }
-
-  .profile span {
-    font-family: 'Poppins', sans-serif; /* Use a modern sans-serif font */
-    text-transform: uppercase; /* Capitalize the letter */
-    letter-spacing: 1px; /* Slight letter spacing for a clean look */
-  }
-
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 
 .discover-section h2 {

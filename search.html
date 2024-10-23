@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Categories</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f7f7f7;
+            color: #333;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #c9c9c9;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .search-bar-container {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .search-bar {
+            width: 100%;
+            max-width: 500px;
+            font-size: 16px;
+            border: none;
+            border-radius: 30px;
+            padding: 10px 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .search-bar:focus {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+    
+
+        .profile {
+            background-image: linear-gradient(135deg, #3a7bd5, #ff00cc);
+            color: #fff;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            font-weight: bold;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-left: 20px;
+        }
+
+        .profile:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        a {
+    text-decoration: none;
+}
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            position: relative;
+            height: 200px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px); /* Glassmorphism effect */
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .card .text {
+            flex: 1;
+        }
+
+        .card .image {
+            flex: 0 0 150px;
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .card .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Custom colors for each card */
+        .made-for-you { background-color: #1e90ff; }
+        .new-releases { background-color: #ff6347; }
+        .hindi { background-color: #e25ab0; }
+        .punjabi { background-color: #ff4500; }
+        .tamil { background-color: #6a5acd; }
+        .telugu { background-color: #b66129; }
+        .podcast-charts { background-color: #00bcd4; }
+        .podcast-new-releases { background-color: #9c27b0; }
+        .video-podcasts { background-color: #ff5722; }
+        .business-technology { background-color: #607d8b; }
+        .charts { background-color: #4caf50; }
+        .malayalam { background-color: #f44336; }
+        .K-pop { background-color: #ff1493; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="search-bar-container">
+            <input type="text" class="search-bar" placeholder="What do you want to listen?">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+        <div class="profile">
+            <span>S</span>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Browse All</h1>
+        <div class="grid-container">
+            <!-- Made For You Card -->
+            <a href="madeforyou.html">
+                <div class="card made-for-you">
+                    <div class="text">Made For You</div>
+                    <div class="image">
+                        <img src="https://i.pinimg.com/564x/b1/6d/dd/b16ddd35fe5d3e0370ba5b23566ff2e7.jpg" alt="Made For You">
+                    </div>
+                </div>
+            </a>
+    
+            <!-- New Releases Card -->
+            <a href="newreleases.html">
+                <div class="card new-releases">
+                    <div class="text">New Releases</div>
+                    <div class="image">
+                        <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2019/10/New-Release-Burst2-1920x733.jpg" alt="New Releases">
+                    </div>
+                </div>
+            </a>
+    
+            <!-- Hindi Card -->
+            <a href="hindi.html">
+                <div class="card hindi">
+                    <div class="text">Hindi</div>
+                    <div class="image">
+                        <img src="https://i.scdn.co/image/ab67706f00000002e0af4fcebb30f8c3c465e387" alt="Hindi">
+                    </div>
+                </div>
+            </a>
+    
+            <!-- Tamil Card -->
+            <a href="tamil.html">
+                <div class="card tamil">
+                    <div class="text">Tamil</div>
+                    <div class="image">
+                        <img src="https://i.scdn.co/image/ab67706f00000002bdcafbf525c8051cff8043ce" alt="Tamil">
+                    </div>
+                </div>
+            </a>
+    
+            <!-- Telugu Card -->
+            <a href="telugu.html">
+                <div class="card telugu">
+                    <div class="text">Telugu</div>
+                    <div class="image">
+                        <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8481d47bd820592b9931f5c65e" alt="Telugu">
+                    </div>
+                </div>
+            </a>
+    
+            <!-- Love Card -->
+            <a href="love.html">
+                <div class="card podcast-charts">
+                    <div class="text">Love</div>
+                    <div class="image">
+                        <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8441f234ac1e95e3a271c77565" alt="Love">
+                    </div>
+                </div>
+            </a>
+    
+            <!-- Party Card -->
+            <a href="party.html">
+                <div class="card podcast-new-releases">
+                    <div class="text">Party</div>
+                    <div class="image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzqLLYv1VAodr1UbUuPpj4fvYFRd4f0Cn5xw&s" alt="Party">
+                    </div>
+                </div>
+            </a>
+    
+            <!-- Mood Card -->
+            <a href="mood.html">
+                <div class="card video-podcasts">
+                    <div class="text">Mood</div>
+                    <div class="image">
+                        <img src="https://i.scdn.co/image/ab67706f000000028191cc41d8585df6170b3e5e" alt="Mood">
+                    </div>
+                </div>
+            </a>
+    
+            <!-- Dance Card -->
+            <a href="dance.html">
+                <div class="card business-technology">
+                    <div class="text">Dance</div>
+                    <div class="image">
+                        <img src="https://i.scdn.co/image/ab67706f00000002f2b33b32d853f93c3225f891" alt="Dance">
+                    </div>
+                </div>
+            </a>
+    
+            <!-- Sleep Card -->
+            <a href="sleep.html">
+                <div class="card business-technology">
+                    <div class="text">Sleep</div>
+                    <div class="image">
+                        <img src="https://i.scdn.co/image/ab67706f00000002cd17d41419faa97069e06c16" alt="Sleep">
+                    </div>
+                </div>
+            </a>
+    
+            <!-- K-Pop Card -->
+            <a href="kpop.html">
+                <div class="card charts">
+                    <div class="text">K-Pop</div>
+                    <div class="image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIDrILQdg4FWyXXfgE2iUsf95_oi_b0rRbiQ&s">
+                    </div>
+                </div>
+            </a>
+    
+            <!-- Instrumental Card -->
+            <a href="intrumental.html">
+                <div class="card K-pop">
+                    <div class="text">Instru  mental</div>
+                    <div class="image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROFcAhVRuhpDaqpyQQrSmSMHjyjMIWShxjbA&s" alt="Instrumental">
+                    </div>
+                </div>
+            </a>
+    
+            <!-- More cards can go here -->
+        </div>
+    </div>   
+    </div>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Mixes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: white;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #ffffff;
+            border-bottom: 2px solid #282828;
+            padding-bottom: 10px;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.05);
+        }
+
+        .card-title {
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: #ffffff;
+        }
+
+        .card-description {
+            font-size: 14px;
+            color: #b3b3b3;
+        }
+
+        /* Additional styling for improved modern look */
+        .section h1 {
+            font-weight: 600;
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #333;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Section 1: Your Genre Mixes -->
+        <div class="section">
+            <h1>Your Genre Mixes</h1>
+            <div class="grid-container">
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67706f00000002d5b5027669719633df499068" alt="Telugu Mix">
+                    <div class="card-title">Trending Now Telugu</div>
+                    <div class="card-description">Karthik, Anirudh Ravichander, Shilpa...</div>
+                </div>
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67616d0000b2736e336a8e4612a43fd43876e7" alt="Pop Mix">
+                    <div class="card-title">Pop Mix</div>
+                    <div class="card-description">Ruth B., The Kid LAROI, The Weeknd...</div>
+                </div>
+                <div class="card">
+                    <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84aa27c9288a15c200618dc3e1" alt="K-Pop Mix">
+                    <div class="card-title">K-Pop Mix</div>
+                    <div class="card-description">BTS, Jimin, aespa and more</div>
+                </div>
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67706f00000002c7f323115717f0f80fef50aa" alt="Tamil Mix">
+                    <div class="card-title">Tamil Mix</div>
+                    <div class="card-description">Devi Sri Prasad, Sid Sriram, Thaman S...</div>
+                </div>
+                <div class="card">
+                    <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84dc9d42bc37d95f153c33fa5b" alt="Hindi Mix">
+                    <div class="card-title">Hindi Mix</div>
+                    <div class="card-description">Sachin-Jigar, Jubin Nautiyal and more</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: Your Artist Mixes -->
+        <div class="section">
+            <h1>Your Artist Mixes</h1>
+            <div class="grid-container">
+                <div class="card">
+                    <img src="https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO1wY0mu-default.jpg" alt="Thaman S Mix">
+                    <div class="card-title">Thaman S Mix</div>
+                </div>
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67706f00000002cd847dbb3d326f96521df965" alt="V Mix">
+                    <div class="card-title">V Mix</div>
+                </div>
+                <div class="card">
+                    <img src="https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO2GbnbB-default.jpg" alt="Anirudh Ravichandra Mix">
+                    <div class="card-title">Anirudh Ravichandra Mix</div>
+                </div>
+                <div class="card">
+                    <img src="https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO1ReU4I-default.jpg" alt="Devi Sri Prasad Mix">
+                    <div class="card-title">Devi Sri Prasad Mix</div>
+                </div>
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67706f00000002256e5fd2d2b6df5b9e98ac4e" alt="The Weeknd Mix">
+                    <div class="card-title">The Weeknd Mix</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 3: Your Mood Mixes -->
+        <div class="section">
+            <h1>Your Mood Mixes</h1>
+            <div class="grid-container">
+                <div class="card">
+                    <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84f3a724f34ff546da71a943af" alt="Moody Mix">
+                    <div class="card-title">Moody Mix</div>
+                    <div class="card-description">Shekar Chandra, Raghav Chaitanya...</div>
+                </div>
+                <div class="card">
+                    <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000d72c87079dd0292cea7772045245" alt="Upbeat Mix">
+                    <div class="card-title">Upbeat Mix</div>
+                    <div class="card-description">Devi Sri Prasad, Naresh Iyer and...</div>
+                </div>
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67706f00000002518096c62a9e453db38093db" alt="Happy Mix">
+                    <div class="card-title">Happy Mix</div>
+                    <div class="card-description">Thaman S, A.R. Rahman and Chinmayi</div>
+                </div>
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67706f00000002dcb7b32f8bf2e6a7851245e3" alt="Romantic Mix">
+                    <div class="card-title">Romantic Mix</div>
+                    <div class="card-description">Raghav Chaitanya, Hesham Abdul Wahab...</div>
+                </div>
+                <div class="card">
+                    <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84b917ec31346f0a09bf44b9bc" alt="Chill Mix">
+                    <div class="card-title">Chill Mix</div>
+                    <div class="card-description">Shekar Chandra, Raghav Chaitanya...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

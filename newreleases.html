@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Music Friday India Playlist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .playlist-container {
+            width: 100%;
+            max-width: 900px;
+            background-color: #1d1b1e;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+
+        .playlist-container:hover {
+            transform: translateY(-5px);
+        }
+
+        .playlist-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .playlist-title h1 {
+            font-size: 2em;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .play-button {
+            font-size: 1.5em;
+            background-color: #ffffff;
+            border: none;
+            color: #9900e6;
+            padding: 10px;
+            border-radius: 20%;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            color: white;
+        }
+
+        table thead th {
+            text-align: left;
+            padding: 15px 0;
+            font-weight: 500;
+            font-size: 1.2em;
+            border-bottom: 2px solid #444;
+            text-transform: uppercase;
+        }
+
+        table tbody tr {
+            transition: background-color 0.3s;
+        }
+
+        table tbody tr:hover {
+            background-color: #333;
+        }
+
+        table tbody tr:nth-child(even) {
+            background-color: #2a2a2a;
+        }
+
+        table th, table td {
+            padding: 12px 15px;
+        }
+
+        .song-title {
+            display: flex;
+            align-items: center;
+        }
+
+        .song-title img {
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .song-title img:hover {
+            transform: scale(1.05);
+        }
+
+        .song-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .song-artist {
+            color: #b3b3b3;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="playlist-container">
+        <div class="playlist-header">
+            <div class="playlist-title">
+                <h1>New Releases</h1>
+            </div>
+            <button class="play-button">▶</button>
+        </div>
+        <table class="playlist">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Album</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2731656387deb79081776473fed" alt="LOVE, MONEY, FAME">
+                        <div class="song-details">
+                            <span>LOVE, MONEY, FAME (feat. DJ Khaled)</span>
+                            <span class="song-artist">SEVENTEEN, DJ Khaled</span>
+                        </div>
+                    </td>
+                    <td>SEVENTEEN 12th Mini Album 'SPILL</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d0000b27369595383107f533ed82d293a" alt="ATARAXIA">
+                        <div class="song-details">
+                            <span>ATARAXIA</span>
+                            <span class="song-artist">Mishaal Tamer</span>
+                        </div>
+                    </td>
+                    <td>HOME IS CHANGING</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d0000b27319cddfd7465c3ef378e6d64c" alt="Holidays">
+                        <div class="song-details">
+                            <span>Holidays</span>
+                            <span class="song-artist">Conan Gray</span>
+                        </div>
+                    </td>
+                    <td>Holidays</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02e695e9ec6fa793b403d403b6" alt="Spring breakers featuring kesha">
+                        <div class="song-details">
+                            <span>Spring breakers featuring kesha</span>
+                            <span class="song-artist">Charli XCX, Kesha</span>
+                        </div>
+                    </td>
+                    <td>Spring breakers featuring kesha</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d0000b27386662f0bf0b8df09e7e6ee34" alt="ADDICTED (feat. The Cavemen.)">
+                        <div class="song-details">
+                            <span>ADDICTED (feat. The Cavemen.)</span>
+                            <span class="song-artist">CKay, The Cavemen.</span>
+                        </div>
+                    </td>
+                    <td>EMOTIONS</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273cab30cd6b5bbe107e4185f0d" alt="Strength (R U Ready) [feat. Joy Crookes]">
+                        <div class="song-details">
+                            <span>Strength (R U Ready) [feat. Joy Crookes]</span>
+                            <span class="song-artist">The Blessed Madonna, Joy Crookes</span>
+                        </div>
+                    </td>
+                    <td>Godspeed</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02f8c8297efc6022534f1357e1" alt="APT.">
+                        <div class="song-details">
+                            <span>APT.</span>
+                            <span class="song-artist">ROSÉ, Bruno Mars</span>
+                        </div>
+                    </td>
+                    <td>APT.</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273a24120ffaf2df085591e45b2" alt="Emeka Dance">
+                        <div class="song-details">
+                            <span>Emeka Dance</span>
+                            <span class="song-artist">Blaqbonez</span>
+                        </div>
+                    </td>
+                    <td>"Of Many Colors": Orange</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02d3be9a9179ff0ad1cdfb914f" alt="Someone For Me">
+                        <div class="song-details">
+                            <span>Someone For Me</span>
+                            <span class="song-artist">Kylie Minogue</span>
+                        </div>
+                    </td>
+                    <td>Tension II</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616100005174876faa285687786c3d314ae0" alt="Cut You Off (feat. Kid Cudi)">
+                        <div class="song-details">
+                            <span>Cut You Off (feat. Kid Cudi)</span>
+                            <span class="song-artist">SZA, Kid Cudi</span>
+                        </div>
+                    </td>
+                    <td>SOS (Deluxe)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

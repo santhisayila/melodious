@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Booster</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #fff;
+        }
+        .playlist-container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #2a2a2a;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            color: #3498db;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table thead {
+            background-color: #1a1a1a;
+        }
+        table th, table td {
+            padding: 10px;
+            text-align: left;
+        }
+        table th {
+            color: #3498db;
+        }
+        table tbody tr:nth-child(even) {
+            background-color: #333;
+        }
+        table tbody tr:hover {
+            background-color: #444;
+        }
+        .song-title img {
+            width: 50px;
+            height: 50px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        .song-details {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .song-artist {
+            display: block;
+            font-size: 0.9em;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="playlist-container">
+        <h1>Mood Booster</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Album</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td class="song-title">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/f/f1/Mark_Ambor_-_Belong_Together.png" alt="Belong Together">
+                        <div class="song-details">
+                            <span>Belong Together</span>
+                            <span class="song-artist">Mark Ambor</span>
+                        </div>
+                    </td>
+                    <td>Rockwood</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="song-title">
+                        <img src="https://m.media-amazon.com/images/M/MV5BYzU3ZTFkZDctYmNlNi00ZjMxLTgwNGItYTI1YjdmOWJiNTQzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Flowers">
+                        <div class="song-details">
+                            <span>Flowers</span>
+                            <span class="song-artist">Miley Cyrus</span>
+                        </div>
+                    </td>
+                    <td>Endless Summer Vacation</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="song-title">
+                        <img src="https://linkstorage.linkfire.com/medialinks/images/4e8513b3-6858-43ba-b51d-29ce4797d8e1/artwork-440x440.jpg" alt="Taste">
+                        <div class="song-details">
+                            <span>Taste</span>
+                            <span class="song-artist">Sabrina Carpenter</span>
+                        </div>
+                    </td>
+                    <td>Short n' Sweet</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273811b8a1d3649f63af1d5fb65" alt="Lil Boo Thang">
+                        <div class="song-details">
+                            <span>Lil Boo Thang</span>
+                            <span class="song-artist">Paul Russell</span>
+                        </div>
+                    </td>
+                    <td>Lil Boo Thang</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td class="song-title">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/2/26/Shaboozey_-_A_Bar_Song_%28Tipsy%29.png" alt="A Bar Song (Tipsy)">
+                        <div class="song-details">
+                            <span>A Bar Song (Tipsy)</span>
+                            <span class="song-artist">Shaboozey</span>
+                        </div>
+                    </td>
+                    <td>A Bar Song (Tipsy)</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td class="song-title">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/f/fa/Bruno-mars-just-the-way-you-are.jpg" alt="Just the Way You Are">
+                        <div class="song-details">
+                            <span>Just the Way You Are</span>
+                            <span class="song-artist">Bruno Mars</span>
+                        </div>
+                    </td>
+                    <td>Doo-Wops & Hooligans</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d0000b27390ac383add08fbff7286958c" alt="feelslikeimfallinginlove">
+                        <div class="song-details">
+                            <span>feelslikeimfallinginlove - Single Version</span>
+                            <span class="song-artist">Coldplay</span>
+                        </div>
+                    </td>
+                    <td>feelslikeimfallinginlove</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d00001e0272087cf057d9d3998dcfd477" alt="Criminals">
+                        <div class="song-details">
+                            <span>Criminals</span>
+                            <span class="song-artist">Meghan Trainor</span>
+                        </div>
+                    </td>
+                    <td>Timeless - Deluxe</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td class="song-title">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/2/2a/Jungle_-_Back_on_74.png" alt="Back On 74">
+                        <div class="song-details">
+                            <span>Back On 74</span>
+                            <span class="song-artist">Jungle</span>
+                        </div>
+                    </td>
+                    <td>Volcano</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td class="song-title">
+                        <img src="https://i.scdn.co/image/ab67616d00001e024dd655faf9d73bdbb79ceca7" alt="I Forgive You (Chromeo Remix) [radio edit]">
+                        <div class="song-details">
+                            <span>I Forgive You (Chromeo Remix) [radio edit]</span>
+                            <span class="song-artist">Sia, Chromeo</span>
+                        </div>
+                    </td>
+                    <td>I Forgive You (Remixes)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
